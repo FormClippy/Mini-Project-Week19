@@ -10,25 +10,56 @@
 }
 
 nav {
-  padding: 1rem;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .nav-con {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo i {
+  font-size: 2rem;
 }
 
 ul {
-  display: flex;
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
-  margin: 0 1rem;
+  margin-left: 20px;
 }
 
 ul li a {
   text-decoration: none;
+  color: black;
+  font-size: 16px;
 }
+
+nav::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to right, #a8c0ff, #fbc2eb, #fdeff9, #ffc3a0);
+  z-index: -1;
+}
+
 .main-slide {
   padding: 1rem 0;
 }
@@ -95,6 +126,16 @@ ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
+}
+
+.blog-items img:nth-of-type(2){
+    width: 60px;
+    height: 100px;
+    
+    position: absolute;
+    top: -45px;
+    left: -20px;
 }
 
 .blog-items h1 {
@@ -109,6 +150,7 @@ ul li a {
   height: 550px;
   padding: 4rem 1rem;
   border-radius: 20px;
+  position: relative;
 }
 
 .blog-items p {
@@ -185,7 +227,7 @@ ul li a {
 
 .products-pic {
   color: #fff;
-  background: url("https://media.istockphoto.com/id/1164361401/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87.jpg?s=1024x1024&w=is&k=20&c=Q4l7Y8vjRvaP3NScHgIcKDKJyBHRb25Z17YxJ9lyhtY=");
+  background: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-TAA-202310?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1697149577145");
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -194,11 +236,15 @@ ul li a {
   width: 960px;
 }
 .products-pic h1 {
-  text-transform: uppercase;
   font-size: 2rem;
+  color: #ffffff;
+  background-color: #ff0000;
+  width: 400px;
+  border-radius: 50%;
 }
 .products-pic p {
   margin: 0.3rem 0;
+  
 }
 .products-pic a {
   display: inline-block;
