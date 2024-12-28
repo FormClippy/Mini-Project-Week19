@@ -43,6 +43,10 @@ ul li a{
     font-size: 3rem;
 }
 
+.header-info p{
+    margin-top: 1rem;
+}
+
 .line{
     background-color: black;
     width: 200px;
@@ -77,8 +81,10 @@ ul li a{
 }
 
 .blog{
-    background-color: #18181A;
-}
+   background-image: url('https://papers.co/wallpaper/papers.co-so84-blur-gradation-apple-event-rainbow-pastel-23-wallpaper.jpg');
+   background-position: center;
+   background-size: cover;
+}   
 .blog-con{
     text-align: center;
     padding: 2rem 0;
@@ -93,19 +99,19 @@ ul li a{
 .blog-items h1{
     text-transform: uppercase;
     font-weight: bold;
-    color: #fff;
+    color: #000;
     margin-bottom: 1rem;
 }
 
 .blog-items{
-    background-color: #39393B;
+    background-color: #ffffff;
     height: 550px;
     padding: 4rem 1rem;
     border-radius: 20px;
 }
 
 .blog-items p {
-    color: #fff;
+    color: #000;
 }
 
 .blog-items img{
