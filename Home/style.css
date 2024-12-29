@@ -186,17 +186,17 @@ nav::after {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: 10rem;
 }
 
 .new-product{
-  width: 200px;
+  width: 17%;
   position: absolute;
   top: -2px;
 }
 .com-pic img{
     width: 100%;
-    height: 500px;
-    mix-blend-mode: multiply;
+    height: 400px;
 }
 
 .price {
