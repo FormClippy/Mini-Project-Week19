@@ -91,6 +91,25 @@ nav::after {
 .highlight {
   color: #6e6e73;
 }
+
+.search-box input {
+  padding: 7px;
+  width: 300px;
+}
+.search-box button:hover {
+  background-color: #0e62bd;
+}
+
+.search-box button {
+  padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
 .banner {
   padding: 2rem 0;
   position: relative;
@@ -114,7 +133,7 @@ nav::after {
         display: inline-flex;
         padding: 10px 25px;
         margin-top: 1rem;
-        background-color: #222;
+        background-color: forestgreen;
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
