@@ -47,5 +47,18 @@ for (let i = 0; i < productClose.length; i++) {
     });
 }
 
+function searchProducts() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const products = document.getElementsByClassName("all-grid-item");
+
+    Array.from(products).forEach(product => {
+        const productName = product.querySelector("h4").innerText.toLowerCase();
+        if (productName.includes(input)) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
 
 
