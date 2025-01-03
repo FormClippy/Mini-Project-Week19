@@ -80,11 +80,6 @@ nav::after {
       font-weight: 600;
       padding: 1.2rem 0;
     }
-
-    a{
-      text-decoration: none;
-      color: black;
-    }
   }
 }
 
