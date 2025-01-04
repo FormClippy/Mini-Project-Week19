@@ -63,6 +63,26 @@ nav::after {
   z-index: -1;
 }
 
+.fa-cart-shopping{
+  font-size: 1.2rem;
+}
+.cart{
+  position: relative;
+}
+.cartCount{
+  position: absolute;
+  top: -8px;
+  right: -11px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
 .main-slide {
   padding: 1rem 0;
 }
@@ -97,7 +117,8 @@ nav::after {
   margin-bottom: 0.6rem;
 }
 
-.header-btn a {
+.buy-btn button {
+  border: none;
   display: inline-block;
   text-decoration: none;
   background-color: forestgreen;
@@ -106,7 +127,13 @@ nav::after {
   margin-top: 1rem;
   border-radius: 15px;
   width: 140px;
+  font-size: 1rem;
   color: #fff;
+}
+
+.buy-btn button:hover {
+  transform: scale(1.1);
+  background-color: rgb(57, 156, 57);
 }
 
 .header-pic img {
@@ -119,8 +146,10 @@ nav::after {
   background-image: url("https://papers.co/wallpaper/papers.co-so84-blur-gradation-apple-event-rainbow-pastel-23-wallpaper.jpg");
   background-position: center;
   background-size: cover;
+  height: 660px;
 }
 .blog-con {
+
   text-align: center;
   padding: 2rem 0;
 }
@@ -129,7 +158,6 @@ nav::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-
 }
 
 .blog-items img:nth-of-type(2){
@@ -150,7 +178,7 @@ nav::after {
 
 .blog-items {
   background-color: #ffffff;
-  height: 550px;
+  height: 600px;
   padding: 4rem 1rem;
   border-radius: 20px;
   position: relative;
@@ -241,7 +269,7 @@ nav::after {
   background: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-TAA-202310?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1697149577145");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 500px;
   text-align: center;
   padding: 3rem;
   width: 960px;
