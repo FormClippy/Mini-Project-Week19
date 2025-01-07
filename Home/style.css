@@ -63,13 +63,13 @@ nav::after {
   z-index: -1;
 }
 
-.fa-cart-shopping{
+.fa-cart-shopping {
   font-size: 1.2rem;
 }
-.cart{
+.cart {
   position: relative;
 }
-.cartCount{
+.cartCount {
   position: absolute;
   top: -8px;
   right: -11px;
@@ -149,7 +149,6 @@ nav::after {
   height: 660px;
 }
 .blog-con {
-
   text-align: center;
   padding: 2rem 0;
 }
@@ -160,13 +159,13 @@ nav::after {
   gap: 20px;
 }
 
-.blog-items img:nth-of-type(2){
-    width: 60px;
-    height: 100px;
-    
-    position: absolute;
-    top: -45px;
-    left: -20px;
+.blog-items img:nth-of-type(2) {
+  width: 60px;
+  height: 100px;
+
+  position: absolute;
+  top: -45px;
+  left: -20px;
 }
 
 .blog-items h1 {
@@ -199,7 +198,7 @@ nav::after {
   background-color: forestgreen;
   padding: 0.5rem;
   text-align: center;
-  margin: .8rem 0;
+  margin: 0.8rem 0;
   border-radius: 15px;
   width: 140px;
   color: #fff;
@@ -217,14 +216,14 @@ nav::after {
   margin-left: 10rem;
 }
 
-.new-product{
+.new-product {
   width: 17%;
   position: absolute;
   top: -2px;
 }
-.com-pic img{
-    width: 100%;
-    height: 400px;
+.com-pic img {
+  width: 100%;
+  height: 400px;
 }
 
 .price {
@@ -311,3 +310,65 @@ hr {
   border-top: 1px solid #d2d2d7;
   margin: 10px 0;
 }
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-page {
+  background: #fff;
+  min-width: 30vw;
+  max-width: 90vw;
+  max-height: 30vw;
+  padding: 20px;
+  border-radius: 15px;
+  /* overflow: scroll; */
+}
+
+.cartlist-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+
+.cartlist-left {
+  display: flex;
+}
+.cartlist-left img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.cartlist-right {
+  display: flex;
+  align-items: center;
+}
+
+.cartlist-detail{
+  margin-top: 7px;
+  line-height: 25px;
+}
+
+.btnc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #d39090;
+  color: #fff;
+  padding: 5px 10px;
+  width: 30px;
+  height: 30px;
+}
+
