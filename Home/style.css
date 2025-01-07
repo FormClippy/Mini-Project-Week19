@@ -338,10 +338,11 @@ hr {
   justify-content: space-between;
   align-items: center;
   width: 50vw;
-
+}
 .cartlist-left {
   display: flex;
 }
+
 .cartlist-left img{
   width: 100px;
   height: 100px;
