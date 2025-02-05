@@ -369,7 +369,7 @@ hr {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
-  background: #d39090;
+  background-color: forestgreen;
   color: #fff;
   padding: 5px 10px;
   width: 30px;
@@ -388,6 +388,7 @@ hr {
   border-radius: 5px;
   font-size: 0.9vw;
   transition: 0.3s;
+  
 }
 
 .btn-buy{
