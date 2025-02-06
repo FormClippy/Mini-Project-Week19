@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="/Product/product.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -17,13 +19,11 @@
                     <i class="fa-brands fa-apple"></i>
                 </div>
                 <ul>
-                    <li><a href="/Home/index.html">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="/Product/product.html">Products</a></li>
                     <div class="cart">
                         <li><i class="fas fa-cart-shopping"></i></li>
-                        <div class="cartCount">
-                            5
-                        </div>
+                        <div class="cartCount">0</div>
                     </div>
                 </ul>
             </div>
@@ -80,9 +80,9 @@
                     <p class="banner-left-content">
                         บางกว่าเคย คลาสสิกเหมือนเดิม
                     </p>
-                    <p>
-                        เริ่มต้นที่ ฿14,900
-                    </p>
+                    <div class="spec">
+                        <h4>เริ่มต้นที่ 17,900</h4>
+                    </div>
                     <div class="buy-btn">
                         <button>Add to cart</button>
                     </div>
@@ -97,9 +97,9 @@
                     <p class="banner-left-content">
                         สร้างมาเพื่อ Apple Intelligence
                     </p>
-                    <p>
-                        เริ่มต้นที่ 17,900
-                    </p>
+                    <div class="spec">
+                        <h4>เริ่มต้นที่ 21,900</h4>
+                    </div>
                     <div class="buy-btn">
                         <button>Add to cart</button>
                     </div>
@@ -114,9 +114,9 @@
                     <p class="banner-left-content">
                         สร้างมาเพื่อ Apple Intelligence
                     </p>
-                    <p>
-                        เริ่มต้นที่ ฿39,900
-                    </p>
+                    <div class="spec">
+                        <h4>เริ่มต้นที่ 39,900</h4>
+                    </div>
                     <div class="buy-btn">
                         <button>Add to cart</button>
                     </div>
@@ -374,11 +374,25 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
+
+    <div class="modal" style="display: none;">  
+        <div class="modal-bg"></div>
+        <div class="modal-page" >
+            <h2>My Cart</h2>
+            <br>
+            <div class="cartlist">
+                <!-- สินค้าจะถูกเพิ่มเข้าไปในนี้ผ่าน JavaScript -->
+            </div>
+            <div class="btn-control">
+                <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+                <button class="btn btn-buy btn-checkout">Buy</button>
+            </div>
+        </div>
+    </div>
+
 
     <script src="/Product/product.js"></script>
 </body>

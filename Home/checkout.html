@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Checkout</h2>
+        <div class="cart-items">
+            <!-- รายละเอียดสินค้าในตะกร้าจะถูกแสดงที่นี่ -->
+        </div>
+
+        <div class="total-price">
+            <!-- ราคาเต็มจะถูกแสดงที่นี่ -->
+        </div>
+
+        <div class="shipping-info">
+            <h3>Shipping Information</h3>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="Postal Code" required>
+                <input type="text" placeholder="Country" required>
+            </form>
+        </div>
+
+        <div class="payment-options">
+            <h3>Payment Options</h3>
+            <select>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+
+        <button class="btn btn-submit">Complete Purchase</button>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

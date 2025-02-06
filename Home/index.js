@@ -1,66 +1,3 @@
-let slideIndex = 1;
-
-function showSlides(n) {
-
-    const slides = document.getElementsByClassName('banner-wrapper')
-    
-    
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slides[slideIndex - 1].style.display = "flex";
-
-}
-
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-
-
-
-let productDesc = document.getElementsByClassName('all-grid-item-desc');
-let productBtn = document.getElementsByClassName('all-grid-item-btn');
-let productClose = document.getElementsByClassName('all-grid-item-desc-x');
-
-for (let i = 0; i < productBtn.length; i++) {
-    productBtn[i].addEventListener('click', function () {
-        productDesc[i].style.display = 'block';
-    
-        productDesc[i].classList.add('popup'); // เพิ่ม class "show"
-    });
-}
-
-for (let i = 0; i < productClose.length; i++) {
-    productClose[i].addEventListener('click', function () {
-        productDesc[i].style.display = 'none';
-    });
-}
-
-function searchProducts() {
-    const input = document.getElementById("searchInput").value.toLowerCase();
-    const products = document.getElementsByClassName("all-grid-item");
-
-    Array.from(products).forEach(product => {
-        const productName = product.querySelector("h4").innerText.toLowerCase();
-        if (productName.includes(input)) {
-            product.style.display = "block";
-        } else {
-            product.style.display = "none";
-        }
-    });
-}
-
 $(document).ready(function () {
     let cart = JSON.parse(localStorage.getItem('cart')) || []; // ดึงข้อมูลตะกร้าจาก localStorage
 
@@ -130,13 +67,12 @@ $(document).ready(function () {
 
     // คลิกปุ่ม "Add to cart"
     $(".buy-btn button").click(function () {
-        let product = $(this).closest(".all-grid-item, .banner-wrapper");
-        let name = product.find("h4, .banner-left-title h1").text();
-        let price = parseInt(product.find(".all-grid-item-price, .spec h2").text().replace(/[^\d]/g, ""));
-        let image = product.find("img").attr("src");
+        let product = $(this).closest(".blog-items, .header-info, .all-footer-info");
+        let productName = product.find("h1, h2").first().text().trim();
+        let productPrice = product.find(".spec h3, .price").text().replace("ราคา ", "").trim();
+        let productImg = product.find("img").first().attr("src");
 
-
-        addToCart(product, name, price, image);
+        addToCart(productName, productPrice, productImg);
     });
 
 
@@ -184,7 +120,5 @@ $(document).ready(function () {
     });
     
 });
-
-///
 
 
